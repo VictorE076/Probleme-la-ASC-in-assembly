@@ -15,6 +15,7 @@ perf:
 	pushl %ebp
 	movl %esp, %ebp
 	subl $8, %esp
+	
 //	
 	movl $0, -4(%ebp); // aici avem "sum";
 	movl 8(%ebp), %eax
@@ -83,10 +84,13 @@ main:
 	call scanf
 	addl $8, %esp
 	
+	// movl $3, %eax
+	// pushl %eax
 	pushl x
 	call perf
 	pop %ebx
-	
+	// popl %eax
+
 	pushl x
 	
 	cmp $1, %eax
