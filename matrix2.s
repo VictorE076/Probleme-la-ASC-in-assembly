@@ -5,11 +5,11 @@
 	n: .long 5
 	m: .long 6
 	
-	matrix: .long 123, 120, 1106, 1, 100, 3331
+	matrix: .long 123, 120, 1106, 1, -100, -3331
 		.long 511, 17, 18, 2, 11, 121
 		.long 13, 4, 21, 6, 100, 1
-		.long 0, 9, 3, 50, 9811, 887
-		.long 34, 15, 34, 12, 3, 1
+		.long 0, 9, 3, 50, -9811, 887
+		.long 34, -15, -34, 12, 3, 1
 	
 	sum: .space 4
 	
@@ -123,6 +123,11 @@ next_a:
 	
 		
 etexit:
+	// movl $-11, %eax; pune in %eax valoarea -11;
+	
+	// movl $68719476719, %eax
+	// movl $-17, %ebx
+	
 	movl $1, %eax
 	xor %ebx, %ebx
 	int $0x80
