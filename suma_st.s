@@ -1,6 +1,6 @@
 // Suma a doua numere prin intermediul unei proceduri(functie);
 .data
-	x: .long 15
+	x: .long 56
 	y: .long 24
 	z: .space 4
 .text
