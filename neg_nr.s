@@ -16,7 +16,7 @@ main:
 	movl $-2147483648, b
 	// a == b true
 	
-	// MOTIV: se lucreaza in modulo 2^32 deoarece acem la dispozitie 32 de biti;
+	// MOTIV: se lucreaza in modulo 2^32 deoarece avem la dispozitie 32 de biti;
 compare:
 	movl a, %eax
 	cmp b, %eax
