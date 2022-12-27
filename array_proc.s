@@ -1,7 +1,7 @@
 // Folosim o procedura care are doua adrese de matrici diferite transmise ca parametru;
 .data
 	v1: .long 45, 35, -90, 23, 120, 23, 89, 41, 67, 114441
-	v2: .long -8, 5, -1, 0, -90, 0, 5, 1978, -67, -1
+	v2: .long -8, 5, -1, 0, -90, -1, 5, 1978, -67, -1
 	vres: .space 100
 	
 	n: .long 10
