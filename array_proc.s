@@ -66,7 +66,7 @@ main:
 	pushl $v1
 	call Combine
 	addl $16, %esp
-	
+nt:	
 	
 	movl n, %eax
 	addl %eax, %eax
@@ -97,6 +97,11 @@ etexit:
 	pushl $fend
 	call printf
 	addl $4, %esp	
+	
+	pushl $0
+	call fflush
+	addl $4, %esp
+	
 	
 	movl $1, %eax
 	xor %ebx, %ebx
